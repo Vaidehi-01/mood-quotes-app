@@ -1,0 +1,38 @@
+<html>
+  <div class = "header-section">
+<h1 style="font-family: 'Century Gothic';">Mood Bubble Quotes</h1>
+<link rel="stylesheet" href= "{{ url_for('static', filename='style.css') }}">
+<p style="font-family: 'Century Gothic';">Find the perfect quote to match your current emotional state</p>
+</div>
+
+<div class = "mood-bubble-container">
+<form method="POST">
+  <button type="submit" name="mood" value="Happy" class = "happy">😊<br>Happy</button>
+  <button type="submit" name="mood" value="Sad" class = "sad">😢<br>Sad</button>
+  <button type="submit" name="mood" value="Angry" class = "angry">😠<br>Angry</button>
+  <button type="submit" name="mood" value="Tired" class = "tired">😴<br>Tired</button>
+  <button type="submit" name="mood" value="Anxious" class = "anxious">😟<br>Anxious</button>
+  <button type="submit" name="mood" value="Excited" class = "excited">🤩<br>Excited</button>
+  <button type="submit" name="mood" value="Lonely" class = "lonely">🥺<br>Lonely</button>
+  <button type="submit" name="mood" value="Inspired" class = "Inspired">💪<br>Inspired</button>
+
+</form>
+</div>
+
+{% if quote %} 
+<div class = "quote-box" id="quote-box">
+  <span class = "mood-tag">{{mood}}</span>
+  <p class ="quote-text"> ❝ {{quote}} ❞</p>
+</div>
+{% endif %}
+ 
+</html>
+
+<script>
+  window.onload = function() {
+    const quoteBox = document.getElementById('quote-box');
+    if (quoteBox) {
+      quoteBox.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+</script>

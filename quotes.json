@@ -1,0 +1,58 @@
+{
+    "Happy": [
+        "Smile. It's a free therapy.",
+        "Happiness is a journey, not a destination.",
+        "Joy is the simplest form of gratitude.",
+        "Every day may not be good, but there's something good in every day.",
+        "Do more of what makes you happy."
+    ],
+    "Sad": [
+        "This too shall pass.",
+        "Tears are words that need to be written.",
+        "You are stronger than you think.",
+        "Crying is not a sign of weakness, it's a sign of being human.",
+        "Your story isn't over yet."
+    ],
+    "Angry": [
+        "Breathe in calm, breathe out stress.",
+        "Don't let your anger control you.",
+        "Pause. Then respond.",
+        "Speak when you are calm, not when you are angry.",
+        "Anger is just one letter short of danger."
+    ],
+    "Tired": [
+        "Rest is not a waste of time.",
+        "Recharge. Restart. Refocus.",
+        "Sleep is the best meditation.",
+        "Take time to do nothing - it's part of the plan.",
+        "Even machines need to shut down to work well again."
+    ],
+    "Anxious": [
+        "You don't have to control your thoughts. Just stop letting them control you.",
+        "This feeling is temporary. Breathe.",
+        "Let go of the things you can't control.",
+        "You've survived 100% of your worst days. You can survive this too.",
+        "Peace begins with a single breath."
+    ],
+    "Excited": [
+        "The energy you feel is your soul saying yes.",
+        "Excitement is the spark that lights your fire.",
+        "Keep the excitement alive - it's fuel for action.",
+        "Something wonderful is about to happen.",
+        "You're ready. Go get it!"
+    ],
+    "Lonely": [
+        "You are not alone, even when you feel like it.",
+        "Sometimes you need to step outside, get some air, and remind yourself who you are.",
+        "Being alone doesn't mean being unloved.",
+        "The night is darkest just before the dawn.",
+        "Someone out there feels the same way - you're never truly alone."
+    ],
+    "Inspired": [
+        "Push yourself, because no one else is going to do it for you.",
+        "Small steps every day lead to big results.",
+        "Your only limit is your mind.",
+        "Don't wait for opportunity. Create it.",
+        "Success starts with self-discipline."
+    ]
+}
