@@ -25,8 +25,18 @@ def get_quote_by_mood(mood):
         return random.choice(quotes[mood])
     else:
         return "Sorry, I don't have quotes for that mood yet."
+    
+@app.route("/", methods=["GET", "POST"])  # 🔁 Add POST method
+def home():
+    quote = None
+    if request.method == "POST":  # ✅ Add this block
+        mood = request.form.get("mood")
+        if mood in quotes:
+            quote = random.choice(quotes[mood])
+    return render_template("index.html", quote=quote)  # 🔁 Pass 'quote'
 
-@app.route("/", methods=["GET", "POST"])
+
+"""@app.route("/", methods=["GET", "POST"])
 def index():
     quote = ""
     selected_mood = ""
@@ -37,7 +47,7 @@ def index():
         quote = get_quote_by_mood(selected_mood)
         emoji = mood_emojis.get(selected_mood.capitalize(), "")
     
-    return render_template("index.html", quote=quote, mood=selected_mood, emoji=emoji)
+    return render_template("index.html", quote=quote, mood=selected_mood, emoji=emoji)"""
 
 if __name__ == "__main__":
     app.run(debug=True)
